@@ -1,0 +1,122 @@
+body {
+  background-color: whitesmoke;
+}
+
+.allCheckout {
+  height: auto;
+  width: 80%;
+  background-color: burlywood;
+  margin: auto;
+}
+
+.allCheckout h1 {
+  text-align: center;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.checkoutProduct {
+  /* display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: auto;
+  align-items: center;
+  font-size: 30px;
+  box-shadow: 0 1px 1px 1px black;
+  background-color: white; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 350px;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.checkoutProduct img {
+  width: 150px;
+  height: 150px;
+}
+
+.theOrder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.theOrder a {
+  border-radius: 25px;
+  padding: 10px 25px;
+  background-color: rgb(96, 96, 146);
+  color: white;
+}
+
+.checkoutButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 10px;
+}
+
+.checkoutButtons button {
+  padding: 10px;
+}
+
+.theSendYourInfo {
+  width: 50%;
+  background: white;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 50px;
+}
+
+.divForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  padding: 5px;
+}
+
+.divForm input {
+  padding: 5px;
+}
+
+.theSendButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.theSendButton button {
+  background-color: rgb(96, 96, 146);
+  padding: 15px 35px;
+  border-radius: 25px;
+  color: white;
+  border: none;
+}
+
+.theSendButton button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+.theSendButton button:active {
+  background-color: darkgreen;
+}

@@ -1,0 +1,192 @@
+.theCart {
+  height: auto;
+  width: 80%;
+  background-color: burlywood;
+  margin: auto;
+}
+
+.theCart h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial;
+  font-weight: 100;
+  color: rgb(96, 96, 146);
+}
+
+.theCheckoutCost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 150px;
+  background-color: gray;
+  color: white;
+  padding: 15px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.layoutForTotalCost {
+  background-color: white;
+  color: black;
+}
+
+.layoutForTotalCost p {
+  font-size: Arial;
+  font-family: 100;
+  padding: 10px 25px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.totalCostSum {
+  font-size: 30px;
+}
+
+.checkoutButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.checkoutButton a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  /* bottom: 0; */
+  background-color: rgb(96, 96, 146);
+  border: none;
+  color: white;
+  height: 50px;
+  width: 100%;
+}
+
+.checkoutButton button:hover {
+  cursor: pointer;
+  background-color: rgb(134, 114, 134);
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.singleCartItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 350px;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.singleCartItem img {
+  width: 250px;
+  height: 250px;
+}
+
+.inputAndButton {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+
+  gap: 5px;
+}
+
+.singleCartItem input {
+  width: 50px;
+  height: 20px;
+  padding: 5px 5px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.singleCartItem button {
+  padding: 5px 25px;
+  border-radius: 25px;
+  border: none;
+}
+
+.deleteBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 30px;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+  background-color: darkred;
+}
+
+.addBtn {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 30px;
+}
+
+.addBtn:hover {
+  cursor: pointer;
+  background-color: darkgreen;
+}
+
+.theStyleForButtonsInCheckout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.theStyleForButtonsInCheckout button {
+  display: flex;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background-color: rgb(96, 96, 146);
+  color: white;
+  border: none;
+}
+.theStyleForButtonsInCheckout button:hover {
+  cursor: pointer;
+  background-color: rgb(134, 114, 134);
+}
+
+.showChekoutInfoOrder {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  position: fixed;
+  right: -2000px;
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  top: 0;
+  margin-top: 49px;
+}
+
+.showChekoutInfoOrder.activate {
+  position: fixed;
+  right: 0;
+}
+
+.checkoutOrder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 300px;
+  margin-top: 50px;
+}
