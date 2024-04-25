@@ -166,6 +166,11 @@
     color: white;
   }
 
+  .fa-cart-shopping:hover {
+    cursor: pointer;
+    color: darkred;
+  }
+
   .theQuantity {
     display: flex;
     flex-direction: row;
