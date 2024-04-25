@@ -62,18 +62,20 @@ body {
 }
 
 .checkoutButtons .theRemoveBtn {
+  padding: 5px 25px;
   border-radius: 25px;
+  border: none;
   background-color: red;
   color: white;
-  border: none;
-  padding: 10px 35px;
+  font-size: 30px;
 }
 .checkoutButtons .theAddBtn {
+  padding: 5px 25px;
   border-radius: 25px;
+  border: none;
   background-color: green;
   color: white;
-  border: none;
-  padding: 10px 35px;
+  font-size: 30px;
 }
 
 .checkoutButtons .theRemoveBtn:hover {
