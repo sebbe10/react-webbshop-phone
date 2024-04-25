@@ -1,7 +1,6 @@
 .yourOrder {
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
   justify-content: center;
   width: 50%;
   margin: auto;
@@ -9,10 +8,13 @@
   font-size: 30px;
 }
 
+.theOrder {
+  margin-top: 50px;
+}
+
 .orderH3 h3 {
   font-family: Arial;
   font-weight: 100;
-
   text-align: center;
 }
 
