@@ -17,7 +17,7 @@ let allProducts = [
     }, {
         id: 3,
         name: 'Phone',
-        price: 8888,
+        price: 12888,
         img: image3
     }, {
         id: 4,
@@ -27,7 +27,7 @@ let allProducts = [
     }, {
         id: 5,
         name: 'Phone',
-        price: 8888,
+        price: 18888,
         img: image5
     },
 ]

@@ -18,7 +18,6 @@ function MyRouterActivate() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/product" element={<TheProducts />}></Route>
-          {/* <Route path=":productId" element={<Product />}></Route> */}
 
           <Route
             path="/product/:productId"
