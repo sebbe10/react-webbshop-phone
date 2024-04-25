@@ -73,10 +73,16 @@ function Checkout() {
                         </p>
                       </div>
                       <div className="checkoutButtons">
-                        <button onClick={() => removeToCart(product.id)}>
+                        <button
+                          className="theRemoveBtn"
+                          onClick={() => removeToCart(product.id)}>
                           -
                         </button>
-                        <button onClick={() => addToCart(product.id)}>+</button>
+                        <button
+                          className="theAddBtn"
+                          onClick={() => addToCart(product.id)}>
+                          +
+                        </button>
                       </div>
                     </div>
                   );

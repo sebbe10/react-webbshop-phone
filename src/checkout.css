@@ -61,8 +61,29 @@ body {
   padding: 10px;
 }
 
-.checkoutButtons button {
-  padding: 10px;
+.checkoutButtons .theRemoveBtn {
+  border-radius: 25px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 35px;
+}
+.checkoutButtons .theAddBtn {
+  border-radius: 25px;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 35px;
+}
+
+.checkoutButtons .theRemoveBtn:hover {
+  cursor: pointer;
+  background-color: darkred;
+}
+
+.checkoutButtons .theAddBtn:hover {
+  cursor: pointer;
+  background-color: darkgreen;
 }
 
 .theSendYourInfo {
