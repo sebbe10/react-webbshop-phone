@@ -78,6 +78,7 @@ function Cart() {
               <button onClick={() => navigate("/product")}>
                 Countinue shopping
               </button>
+              <button onClick={() => navigate("/checkout")}>Checkout</button>
             </div>
 
             <div className="theCheckoutCost">

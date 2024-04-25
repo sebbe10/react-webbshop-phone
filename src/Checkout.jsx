@@ -1,5 +1,5 @@
 import ShopContext from "./Shopcontext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import allProducts from "./products";
 import "./checkout.css";
 import { Link } from "react-router-dom";
@@ -25,6 +25,30 @@ function Checkout() {
     (total, quantity) => total + quantity,
     0
   );
+
+  const [formData, setFormdata] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+  });
+
+  const handeleChange = (e) => {
+    setFormdata({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    localStorage.setItem("saveinfo", JSON.stringify(formData));
+    window.location.href = "/order";
+
+    if (
+      formData.firstname.trim() === "" ||
+      formData.lastname.trim() === "" ||
+      formData.email.trim() === ""
+    ) {
+      return (window.location.href = "/checkout");
+    }
+  };
 
   return (
     <>
@@ -59,19 +83,41 @@ function Checkout() {
                 }
               })}
             </div>
+
             <div className="theSendYourInfo">
-              <form action="/order">
+              <form action="/order" onSubmit={handleSubmit}>
                 <div className="divForm">
                   <label>Firstname:</label>
-                  <input type="text" name="firstname" placeholder="firstname" />
+                  <input
+                    className="firstname"
+                    type="text"
+                    name="firstname"
+                    value={formData.firstname}
+                    onChange={handeleChange}
+                    placeholder="firstname"
+                  />
                 </div>
                 <div className="divForm">
                   <label>Lastname:</label>
-                  <input type="text" name="lastname" placeholder="lastname" />
+                  <input
+                    className="lastname"
+                    type="text"
+                    name="lastname"
+                    value={formData.lastname}
+                    onChange={handeleChange}
+                    placeholder="lastname"
+                  />
                 </div>
                 <div className="divForm">
                   <label>Email</label>
-                  <input type="email" name="email" placeholder="email" />
+                  <input
+                    className="email"
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handeleChange}
+                    placeholder="email"
+                  />
                 </div>
                 <div className="theSendButton">
                   <button type="submit">Make a order</button>
