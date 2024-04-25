@@ -66,7 +66,7 @@ function ShowYouHaveOrder() {
 
                       <div>
                         <p>
-                          Total cost: {cartItems[product.id] * product.price}
+                          Total cost: {cartItems[product.id] * product.price} kr
                         </p>
                       </div>
                     </div>
