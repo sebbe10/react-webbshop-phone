@@ -75,7 +75,9 @@ function Cart() {
               })}
             </div>
             <div className="theStyleForButtonsInCheckout">
-              <button onClick={() => navigate("/")}>Countinue shopping</button>
+              <button onClick={() => navigate("/product")}>
+                Countinue shopping
+              </button>
             </div>
 
             <div className="theCheckoutCost">

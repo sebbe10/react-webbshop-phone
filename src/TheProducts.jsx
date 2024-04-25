@@ -3,6 +3,7 @@ import allProducts from "./products";
 import { ShopContext } from "./Shopcontext";
 import { useContext } from "react";
 import "./products.css";
+import { Link } from "react-router-dom";
 
 function TheProducts() {
   const { addToCart } = useContext(ShopContext);
@@ -13,7 +14,9 @@ function TheProducts() {
         {allProducts.map((product, index) => (
           <div className="product" key={index}>
             <div>
-              <img src={product.img} alt="" />
+              <Link to={`/product/${product.id}`}>
+                <img src={product.img} alt="" />
+              </Link>
             </div>
             <div>
               <p>{product.name}</p>
