@@ -26,23 +26,23 @@ function TheProducts() {
   }
   return (
     <>
-      <select
-        onChange={(e) => {
-          if (e.target.value === "standard") {
-            standard();
-          } else if (e.target.value === "lowToHigh") {
-            lowToHigh();
-          } else if (e.target.value === "highToLow") {
-            highToLow();
-          }
-        }}>
-        <option value="välj">Välj</option>
-        <option value="standard">Standard</option>
-        <option value="lowToHigh">Lågt till högt</option>
-        <option value="highToLow">Högt till lågt</option>
-      </select>
-
       <div className="theShop">
+        <select
+          className="theSelect"
+          onChange={(e) => {
+            if (e.target.value === "standard") {
+              standard();
+            } else if (e.target.value === "lowToHigh") {
+              lowToHigh();
+            } else if (e.target.value === "highToLow") {
+              highToLow();
+            }
+          }}>
+          <option value="standard">Standard</option>
+          <option value="lowToHigh">Lågt till högt</option>
+          <option value="highToLow">Högt till lågt</option>
+        </select>
+
         <div className="products">
           {sortedProducts.map((product, index) => (
             <div className="product" key={index}>

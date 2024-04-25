@@ -1,0 +1,30 @@
+.layoutHome {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.theHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+}
+.myBox {
+  height: 300px;
+  width: 80%;
+  background: repeating-linear-gradient(black, transparent 400px);
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.homeH1 {
+  font-family: Arial;
+  font-weight: 100;
+  font-size: 40px;
+  color: white;
+}

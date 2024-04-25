@@ -1,10 +1,14 @@
-import "./products.css";
+import "./home.css";
 
 function Home() {
   return (
     <>
       <div className="theHome">
-        <h1>Home</h1>
+        <div className="layoutHome">
+          <div className="myBox">
+            <h1 className="homeH1">Allt inom telefoner</h1>
+          </div>
+        </div>
       </div>
     </>
   );

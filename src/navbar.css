@@ -1,44 +1,181 @@
-.header {
-  height: 50px;
+.theHeader {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100px;
+
   background-color: black;
 }
 
-.ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-
-a {
-  color: white;
+.theHeader .theHeadName {
   text-decoration: none;
+  color: white;
   font-family: Arial;
   font-weight: 100;
-  font-size: 30px;
 }
 
-a:hover {
+.theHeader .theHeadName:hover {
   cursor: pointer;
   color: darkred;
 }
 
-.fa-cart-shopping {
-  color: white;
-}
-
-.theQuantity {
+.myHamburgerMenu {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  font-size: 30px;
+  flex-direction: column;
+  gap: 10px;
+  right: 20px;
+  position: absolute;
 }
 
-.theQuantity p {
-  color: white;
+.myHamburgerMenu:hover {
+  cursor: pointer;
+}
+
+.bar {
+  display: flex;
+  width: 50px;
+  height: 7px;
+  background-color: white;
+}
+
+.bar:hover {
+  cursor: pointer;
+}
+
+.closeMenu {
+  margin-top: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.close1 {
+  position: absolute;
+  transform: rotate(45deg);
+  background-color: darkred;
+  height: 7px;
+  width: 60px;
+}
+
+.close2 {
+  position: absolute;
+  transform: rotate(-45deg);
+  background-color: darkred;
+  height: 7px;
+  width: 60px;
+}
+
+.theHamburgerMenuBehind {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: -1500px;
+  background-color: white;
+  width: auto;
+  height: 100vh;
+  top: 0;
+  font-size: 40px;
+  list-style: none;
+}
+
+.theHamburgerMenuBehind.activate {
+  position: fixed;
+  right: 0;
+}
+.theUl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.theLi {
+  list-style: none;
+}
+
+.theLi a {
+  text-decoration: none;
+  color: black;
+}
+
+.touchRemove {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  position: fixed;
+  right: -1500px;
+}
+
+.touchRemove.activate {
+  position: fixed;
+  right: 0;
+}
+.header {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .theHeader {
+    display: none;
+  }
+  .theHeader a {
+    display: none;
+  }
+  .myHamburgerMenu {
+    display: none;
+  }
+
+  .header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .phonestoretitle {
+    display: flex;
+
+    font-family: Arial;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    padding: 100px;
+  }
+
+  .ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: 100;
+    font-size: 30px;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: darkred;
+  }
+
+  .fa-cart-shopping {
+    color: white;
+  }
+
+  .theQuantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 30px;
+  }
+
+  .theQuantity p {
+    color: white;
+  }
 }
